@@ -1,14 +1,161 @@
 <head>
-  <title>chisholm</title>
+  <title>John T. Chisholm for District Attorney</title>
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+	{{> header}}
 
-  {{> hello}}
+	{{> nav}}
+
+	{{#if donate}}
+		{{> donatepopover}}
+	{{/if}}
+
+	{{#if home}}
+		{{> homepage}}
+	{{/if}}
+
+	{{#if about}}
+		{{> aboutpage}}
+	{{/if}}
+	
+	{{#if vision}}
+		{{> visionpage}}
+	{{/if}}
+	
+	{{#if news}}
+		{{> newspage}}
+	{{/if}}
+	
+	{{#if events}}
+		{{> eventspage}}
+	{{/if}}
+	
+	{{#if store}}
+		{{> storepage}}
+	{{/if}}
+
+	{{#if contacts}}
+		{{> contactspage}}
+	{{/if}}
+
+	{{> footer}}
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+<!-- Tools -->
+
+<template name="nav">
+	<div class="navbar">
+		<ul>
+			<li><a class="home">JOHN CHISHOLM: DISTRICT ATTORNEY</a></li>
+			<li><a class="about">ABOUT</a></li>
+			<li><a class="vision">VISION</a></li>
+			<li><a class="news">NEWS</a></li>
+			<li><a class="events">EVENTS</a></li>
+			<li><a class="store">STORE</a></li>
+			<li><a class="contacts">CONTACTS</a></li>
+			<li class="donate"><a class="donate">DONATE</a></li>
+		</ul>
+	</div>
+</template>
+
+<template name="footer">
+	<p>This is the footer!</p>
+</template>
+
+<template name="donatepopover">
+	<div class="backdrop">
+		<div class="donate">
+			<p class="donate">Donate:</p>
+			<a class="5 money">$5</a>
+			<a class="10 money">$10</a>
+			<a class="20 money">$20</a>
+			<a class="50 money">$50</a>
+			<a class="customdonation money">Custom</a>
+		</div>
+	</div>
+</template>
+
+<template name="header">
+	<div class="header">
+
+	</div>
+</template>
+
+<!-- Full pages -->
+
+<template name="homepage">
+	<h1>Home</h1>
+
+	{{> space}}
+</template>
+
+<template name="aboutpage">
+	<h1>About</h1>
+</template>
+
+<template name="visionpage">
+	<h1>Vision</h1>
+</template>
+
+<template name="contactspage">
+	<h1>Contacts</h1>
+</template>
+
+<template name="newspage">
+	<h1>News</h1>
+</template>
+
+<template name="eventspage">
+	<h1>Events</h1>
+</template>
+
+<template name="storepage">
+	<h1>Store</h1>
+</template>
+
+<template name="space">
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
+	<p>Space</p>
 </template>

@@ -1,1 +1,120 @@
 /* CSS declarations go here */
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', sans-serif;
+	background-color: #162e47;
+}
+
+.footer {
+	width: 100%;
+}
+
+.header {
+	height: 600px;
+	width: 100%;
+	background-color: #162e47;
+}
+
+.navbar {
+	height: 100px;
+	overflow: hidden;
+	width: 100%;
+	padding: 0;
+	background-color: #23415f;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    white-space: nowrap;
+}
+
+li {
+	height: 100%;
+    text-decoration: none;
+    display: inline-block;
+}
+
+li a {
+	height: 100%;
+    color: #c5d3de;
+    padding: 40px 20px 0 20px;
+    background-color: #23415f;
+    float: left;
+}
+
+li a:hover {
+    color: #ffffff;
+}
+
+a.donate {
+	float: right;
+	background-color: #f42534;
+	color: #ffffff;
+	right: 0;
+}
+
+a.donate:hover {
+	background-color: #e22323;
+}
+
+li.donate {
+	float: right;
+}
+
+.backdrop {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.6);
+	text-align: center;
+}
+
+div.donate {
+	display: inline-block;
+	text-align: left;
+	color: #ffffff;
+	margin-top: 20%;
+	background-color: #162e47;
+	border-radius: 4px;
+	padding: 30px 20px 50px 20px
+}
+
+a.money {
+	transition: all 0.2s ease;
+	padding: 20px;
+	background-color: #1d99d6;
+	border-radius: 30px;
+}
+
+a.money:hover {
+	background-color: #e22323;
+	padding: 30px;
+	border-radius: 50px;
+}
+
+p.donate {
+	margin-top: 0;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+/*
+	lighter blue: #c5d3de;
+	light blue: #1d99d6;
+	dark blue: #23415f;
+	darker blue: #2c3e50;
+	darkest blue: #162e47;
+
+	red: #e22323;
+	dark red: #ca232b;
+*/

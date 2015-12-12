@@ -1,0 +1,24 @@
+\chisholm
+	+ join
+	+ donate
+	+ header
+	\bio
+	\vision
+	\donate
+	
+
+
+Every page:
+	+ nav 
+	+ social media integration
+	+ footer
+		- contact
+		- quote/vision
+
+Possible:
+	\news
+	\events
+	\contact
+	\store
+
+	- survey
